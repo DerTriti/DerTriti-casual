@@ -1,0 +1,22 @@
+-- Place on Roblox Studio Console
+
+-- Creates a Part
+local part = workspace:FindFirstChild("StudBlock")
+if not part then
+    part = Instance.new("Part") -- Type of Instance
+    part.Name = "Part" -- Name
+    part.Size = Vector3.new(10, 1, 10) -- Size of the part
+    part.Position = Vector3.new(0, 5, 0) --Position
+    part.Anchored = true -- Ancored
+    part.Parent = workspace -- Where The Part is
+end
+
+-- Makes the Part A stud
+part.TopSurface = Enum.SurfaceType.Studs
+part.BottomSurface = Enum.SurfaceType.Studs
+part.FrontSurface = Enum.SurfaceType.Studs
+part.BackSurface = Enum.SurfaceType.Studs
+part.LeftSurface = Enum.SurfaceType.Studs
+part.RightSurface = Enum.SurfaceType.Studs
+
+-- delete the comments 
